@@ -95,7 +95,7 @@
     }
     
     img {
-    height: 60%;
+    height: 10%;
     }
     
     @media only screen 
@@ -135,14 +135,14 @@ You <i>may</i> need these: <span style="color:#4CAF50">Word Pad(or subsitute)</s
     </script>
     
 <div2>/jiw30mv</div2>
-
-var x = document.getElementById("myAudio"); 
-  x.play();
   
-<audio id="myAudio" controls>
-  <source src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" type="audio/mpeg">
+<audio controls style="display:none" id="audio">
+<source src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/710863828" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+<script>
+  document.getElementById('audio').play();
+</script>
 
 </body>
 </html>
