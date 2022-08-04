@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+    body {
+    font-family:idek;
+    font-size:18px;
+    color: #000;
+    background:url(https://68.media.tumblr.com/b5092e38e7ac48fbfb0c8c1d7b0f9d49/tumblr_ookluqk00R1wnhy34o1_1280.jpg);
+    background-attachment: fixed;
+    background-size:100% 100%;
+    }
+        
+    a:link, a:active, a:visited{
+    color: {color:Text};
+    text-decoration:none;
+    }
+        
+    a:hover{
+    color:#000;
+    text-decoration:none;
+    }
+        
+    @font-face { font-family: "neverletgo"; src: url('https://static.tumblr.com/q54tzar/o02m2jt6c/neverletgo_3_.ttf'); }
+    @font-face { font-family: "fineliner"; src: url('https://static.tumblr.com/mlc5xtm/wGlmnbpq2/akadora.ttf'); }
+    @font-face { font-family: "idek"; src: url('https://static.tumblr.com/mlc5xtm/qkCmnbpu0/smellvision.ttf'); }
+    @font-face { font-family: "ok"; src: url('https://static.tumblr.com/mlc5xtm/XCJmnbqds/jandaeverydaycasual.ttf'); }
+    
+    #titlebar {
+    position:fixed;
+    top:-1px;
+    left:-5px;
+    width:260px;
+    height:60px;
+    background:#fff;
+    border:2px solid #ccc;
+    text-align:center;
+    box-shadow:0px 0px 5px #888;
+    font-size:40px;
+    line-height:50px;
+    font-family:fineliner;
+    text-shadow:0px 0px 5px #000;
+    border-top-right-radius: 00px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius:0px;
+    border-bottom-right-radius:4000px;
+    transition: all 1.6s ease-out;
+    -o-transition-transition: all 1.6s ease-out;
+    -webkit-transition: all 1.6s ease-out;
+    -moz-transition: all 1.6s ease-out;
+    }
+    
+    body:hover #titlebar {
+    text-shadow:-1px 0px 0px #000,-5px 0px 0px #0059ff;
+    color:#000000;
+    font-weight:thin;
+    transition: all 1.6s ease-out;
+    -o-transition-transition: all 1.6s ease-out;
+    -webkit-transition: all 1.6s ease-out;
+    -moz-transition: all 1.6s ease-out;
+    }
+
+    .info {
+    font-family:idek;
+    line-height:30px;
+    font-size:18px;
+    padding-left:-10px;
+    text-shadow:0px 0px 5px #fff;
+    color:#000;
+    }
+        
+    #cunt {
+    position:fixed;
+    top:200px;
+    left:250px;
+    width:400px;
+    height:50px;
+    border:3px solid #ccc;
+    background:#fff;
+    line-height:20px;
+    overflow:hidden;
+    box-shadow:0px 0px 5px #777;
+    transition: all 0.3s  ease-out;
+    -o-transition-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    }
+
+    #cunt:hover {
+    width:625px;
+    transition: all 0.5s  ease-out;
+    -o-transition-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    }
+    
+    #cunt a {
+    color:#666;
+    }
+    
+    .cunt {
+    font-size:30px;
+    line-height:60px;
+    color:#777;
+    font-family:ok;
+    height:50px;
+    padding-left:75px;
+    padding-right:62px;
+    display:inline-block;
+    transition: all 0.9s  ease-out;
+    -o-transition-transition: all 0.9s ease-out;
+    -webkit-transition: all 0.9s ease-out;
+    -moz-transition: all 0.9s ease-out;
+    }
+    
+    #cunt:hover .cunt {
+    height:50px;
+    padding-left:50px;
+    padding-right:80px;
+    opacity:1;
+    transition: all 0.9s  ease-out;
+    -o-transition-transition: all 0.9s ease-out;
+    -webkit-transition: all 0.9s ease-out;
+    -moz-transition: all 0.9s ease-out;
+    }
+    
+    #cunt2 {
+    position:fixed;
+    top:350px;
+    left:300px;
+    width:400px;
+    height:50px;
+    border:3px solid #ccc;
+    background:#fff;
+    line-height:20px;
+    overflow:hidden;
+    box-shadow:0px 0px 5px #777;
+    transition: all 0.3s  ease-out;
+    -o-transition-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    }
+    
+    #cunt2:hover { 
+    width:500px;
+    transition: all 0.5s  ease-out;
+    -o-transition-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    }
+    
+    #cunt2 a {
+    color:#666;
+    }
+    
+    .cunt2 {
+    font-size:30px;
+    line-height:60px;
+    color:#777;
+    font-family:ok;
+    height:50px;
+    padding-left:80px;
+    padding-right:120px;
+    display:inline-block;
+    transition: all 0.9s  ease-out;
+    -o-transition-transition: all 0.9s ease-out;
+    -webkit-transition: all 0.9s ease-out;
+    -moz-transition: all 0.9s ease-out;
+    }
+    
+    #cunt2:hover .cunt2 {
+    height:50px;
+    padding-left:50px;
+    padding-right:80px;
+    opacity:1;
+    transition: all 0.9s  ease-out;
+    -o-transition-transition: all 0.9s ease-out;
+    -webkit-transition: all 0.9s ease-out;
+    -moz-transition: all 0.9s ease-out;
+    }
+    
+    #cunt3 {
+    position:fixed;
+    top:500px;
+    left:350px;
+    width:400px;
+    height:50px;
+    border:3px solid #ccc;
+    background:#fff;
+    line-height:20px;
+    overflow:hidden;
+    box-shadow:0px 0px 5px #777;
+    transition: all 0.3s  ease-out;
+    -o-transition-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    }
+    
+    #cunt3:hover {
+    width:415px;
+    transition: all 0.5s  ease-out;
+    -o-transition-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    }
+    
+    #cunt3 a { 
+    color:#666;
+    }
+    
+    .cunt3 {
+    font-size:30px;
+    line-height:60px;
+    color:#777;
+    font-family:ok;
+    height:50px;
+    padding-left:100px;
+    padding-right:100px;
+    display:inline-block;
+    transition: all 0.9s  ease-out;
+    -o-transition-transition: all 0.9s ease-out;
+    -webkit-transition: all 0.9s ease-out;
+    -moz-transition: all 0.9s ease-out;
+    }
+    
+    #cunt3:hover .cunt3 {
+    height:50px;
+    padding-left:50px;
+    padding-right:80px;
+    opacity:1;
+    transition: all 0.9s  ease-out;
+    -o-transition-transition: all 0.9s ease-out;
+    -webkit-transition: all 0.9s ease-out;
+    -moz-transition: all 0.9s ease-out;
+    }
+    
+    div2 {
+    display: none;
+    padding: 10px;
+    font-size: 40px;
+    font-family: verdana;
+    color: white;
+    }
+    
+    .fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background: black; 
+    }
+    
+    @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px) {
+    div2.fullscreen {
+    display: block;
+    }
+    }
+    
+    li {
+   margin-left:50px;  
+   }
+</style>
+</head>
+<body>
+
+<div id="titlebar">Chris' Comics</div>
+
+<div id="cunt">
+<div class="cunt">
+Conflicts of Four
+</div>
+<a href="/comics/cof1">Part 1</a>
+<a href="/comics/cof2">Part 2</a>
+<a href="/comics/cof3">Part 3</a>
+<a href="/comics/cof2.5">Part 2.5</a>
+<a href="/comicscof2.52">Part 2.5(2)</a>
+</div>
+
+<div id="cunt2">
+<div class="cunt2">
+Thanatophobia
+</div>
+<a href="/comics/than1">Part 1</a>
+<a href="/comics/than2">Part 2</a>
+<a href="/comics/than3a">Part 3a</a>
+<a href="/comics/than3b">Part 3b</a>
+</div>
+
+<div id="cunt3">
+<div class="cunt3">
+Coming Soon
+</div>
+<a>Check back later</a>
+<!---------Links Go Here!------------>
+</div>
+
+<div2 class="fullscreen"><br></br><span style= "color: #38b6ff;"><b>Dear mobile user, use the links below to access the comics.</b></span><br></br><br></br>
+    
+    <span style= "color: #ffe019;">Conflicts of Four</span>
+    <ul style="list-style-type:circle;">
+    <li><a style= "color: #ffffff; text-decoration:none" href="/comics/cof1">Part 1</a></li>
+    <li><a style= "color: #ffffff; text-decoration:none" href="/comics/cof2">Part 2</a></li>
+    <li><a style= "color: #ffffff; text-decoration:none" href="/comics/cof3">Part 3</a></li>
+    <li><a style= "color: #ffffff; text-decoration:none" href="/comics/cof2.5">Part 2.5</a></li>
+    <li><a style= "color: #ffffff; text-decoration:none" href="/comics/cof2.52">Part 2.5(2)</a></li>
+    </ul><br></br>
+    
+    <span style= "color: #33ff41;">Thanatophobia</span>
+    <ul style="list-style-type:circle;">
+    <li><a style= "color: #ffffff; text-decoration:none" href="/comics/than1">Part 1</a></li>
+    <li><a style= "color: #ffffff; text-decoration:none" href="/comics/than2">Part 2</a></li>
+    <li><a style= "color: #ffffff; text-decoration:none" href="/comics/than3a">Part 3a</a></li>
+    <li><a style= "color: #ffffff; text-decoration:none" href="/comics/than3b">Part 3b</a></li>
+    </ul>
+</div2>
+
+
+</body>
+</html>
