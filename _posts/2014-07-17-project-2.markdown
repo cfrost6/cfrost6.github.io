@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 2
-img: cake.png
+img: ARG.png
 alt: image-alt
 description: This is an augmented reailty game (ARG) I created for a friend. It is included with these projects because it is one of the most polished projects I've done to date. It is full of puzzles and showcases some coding skill. The puzzles can be quite complex, so be warned. To play, click <a href="/game">here</a>.
 ---
