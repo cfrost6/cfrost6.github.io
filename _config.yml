@@ -1,10 +1,10 @@
 # Site settings
-title: Frost Code
+title: Christopher Frost
 email: frostc313@gmail.com
 url: https://cfrost6.github.io
 description: "Place for project showoff and code testing."
 keywords: "code, HTML, comic, ARG"
-skills: "computer science student"
+skills: "Undergraduate Computer Science student"
 meta_author: Frost Christopher
 
 # Google webmaster tools
@@ -40,13 +40,13 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: instagram
-    url: 
+    url: https://www.instagram.com/frosticle_/
   - title: facebook
-    url:
+    url: https://www.facebook.com/christopherfrost6
   - title: stack-overflow
-    url: 
+    url: https://stackoverflow.com/users/11975738/cfrost6
   - title: github
-    url: 
+    url: https://cfrost6.github.io/
 
 # Postal address (add as many lines as necessary)
 address:
