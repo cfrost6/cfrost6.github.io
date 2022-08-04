@@ -40,13 +40,13 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: instagram
-    url: https://www.instagram.com/frosticle_/
+    url: "https://www.instagram.com/frosticle_/"
   - title: facebook
-    url: https://www.facebook.com/christopherfrost6
+    url: "https://www.facebook.com/christopherfrost6"
   - title: stack-overflow
-    url: https://stackoverflow.com/users/11975738/cfrost6
+    url: "https://stackoverflow.com/users/11975738/cfrost6"
   - title: github
-    url: https://cfrost6.github.io/
+    url: "https://cfrost6.github.io/"
 
 # Postal address (add as many lines as necessary)
 address:
