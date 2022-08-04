@@ -1,11 +1,7 @@
 ---
 layout: default
 modal-id: 2
-date: 2014-07-17
 img: cake.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+description: This is an augmented reailty game (ARG) I created for a friend. It is included with these projects because it is one of the most polished projects I've done to date. It is full of puzzles and showcases some coding skill. The puzzles can be quite complex, so be warned. To play, click <a href="/game">here</a>.
 ---
