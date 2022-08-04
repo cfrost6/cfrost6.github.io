@@ -95,7 +95,8 @@
     }
     
     img {
-    height: 10%;
+    max-height: 70%;
+    max-width: auto;
     }
     
     @media only screen 
@@ -136,13 +137,13 @@ You <i>may</i> need these: <span style="color:#4CAF50">Word Pad(or subsitute)</s
     
 <div2>/jiw30mv</div2>
   
-<audio controls style="display:none" id="audio">
-<source src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/710863828" type="audio/mpeg">
+var x = document.getElementById("myAudio"); 
+  x.play();
+  
+<audio id="myAudio" controls>
+  <source src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/710863828" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-<script>
-  document.getElementById('audio').play();
-</script>
 
 </body>
 </html>
