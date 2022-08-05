@@ -9,6 +9,32 @@
 background-size: cover;
     }
     
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;   
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1px 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+
+    .button1 {
+    background-color: white; 
+    color: black; 
+    border: 5px solid #4CAF50;
+    }
+
+    .button1:hover {
+     background-color: #4CAF50;
+    color: white;
+    }
+    
     .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -28,8 +54,12 @@ background-size: cover;
     }
     
     div {
-    height:100%;
-    width:100%
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    font-size: 16px;
+    font-family: Verdana;
+    text-align: center;
     }
   </style>
 
@@ -37,7 +67,7 @@ background-size: cover;
 
 <img id="Awake" onclick="changeBackground2()" class="nodrag" style="position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;" src="https://66.media.tumblr.com/9698a03b8dfd4ab1dccf7b744c36cb83/0e9614a82aae3550-2e/s540x810/67cf9d59dc4e669c18d1d772a4cb7d0edffff92b.gifv">
 
-<div id="WallPaper" class="bgd_1"></div>
+<div><a href="https://cfrost6.github.io/" class="button button1 unselectable">Back</a></div>
 
 <script>
 
