@@ -1,11 +1,7 @@
 ---
 layout: default
 modal-id: 3
-date: 2014-07-16
-img: circus.png
+img: B-Day.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+description: This is a simplistic project. It's just a page the toggles the background image and which of two sprites are visible. It doubles as a birthday message to send to friends. To view, click <a href="/BDay">here</a>.
 ---
