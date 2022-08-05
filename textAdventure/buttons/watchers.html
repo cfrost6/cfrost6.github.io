@@ -72,7 +72,9 @@ Go now! You're close.
   div2{
   position: absolute;
   bottom: 1em;
-  text-align: bottom;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%,-5%);
   }
   </style>
 
@@ -90,16 +92,6 @@ Go now! You're close.
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-  </head>
-  <body>
-
-
   <div class="eyes">
     <div class="eye">
       <div class="ball"></div>
@@ -109,6 +101,7 @@ Go now! You're close.
       <div class="ball"></div>
     </div>
   </div>
+</center>
 
 
 <script>
@@ -116,10 +109,6 @@ Go now! You're close.
   document.onmousemove = function(){
     var x = event.clientX * 100 / window.innerWidth + "%";
     var y = event.clientY * 100 / window.innerHeight + "%";
-    //event.clientX => get the horizontal coordinate of the mouse
-    //event.clientY => get the Vertical coordinate of the mouse
-    //window.innerWidth => get the browser width
-    //window.innerHeight => get the browser height
 
     for(var i=0;i<2;i++){
       balls[i].style.left = x;
@@ -129,14 +118,12 @@ Go now! You're close.
   }
 </script>
 
-
-<div2 style="position: relative">
-    <p style="font-family:consolas; position: fixed; bottom: 75; width:100%; text     -align: center"><font color=#FFFFFF size="12">Don't let them</font></p>
+<div2>
+    <p style="font-family:consolas; width:100%;"><font color=#FFFFFF size="12">Don't let them</font></p>
     
-    <p style="font-family:consolas; position: fixed; bottom: 15; width:100%; text     -align: center"><font color=#BB0000 size="48"><span style="color:                #E00000">C</span>ON<span style="color: #E00000">T</span><span style              ="color: #E00000">R</span>O<span style="color: #E00000">L</span> YO<span style    ="color: #E00000">U</span></font></p>
+    <p style="font-family:consolas; width:100%;"><font color=#BB0000 size="48"><span style="color: #E00000">C</span>ON<span style="color: #E00000">T</span><span style="color: #E00000">R</span>O<span style="color: #E00000">L</span> YO<span style="color: #E00000">U</span></font></p>
 </div2>
 
 </body>
-</center>
 </head>
 </html>
