@@ -1,16 +1,11 @@
 <html>
 <head>
+</head>
+  
 <body oncontextmenu="return false;"></body>
   <style type="text/css">
     body {
       background-color: #000000;
-    }
-    
-    @font-face {
-    font-family: ‘Ink Free’;
-    src: url(‘https://static.tumblr.com/fx1yb6l/Skkq0k145/inkfree.ttf’)            format(‘truetype’);
-    font-weight: normal;
-    font-style: normal;
     }
     
     .button {
@@ -151,37 +146,37 @@
 </div2>
 
 <center>
-    <img class="nodrag" src="https://66.media.tumblr.com/c4013696538fb5f2322b4fbef1625bd8/d9eccde19e2bc731-6f/s1280x1920/8e221b8ce773a43e046522d7d47077db99064648.png"
+    <img class="nodrag" src="/comics/images/Than_Part2/Than_2_Title.jpeg"
     width= 50%
     style="padding-top: 100px; padding-bottom: 15px;"
     />
     
-    <img class="nodrag" src="https://66.media.tumblr.com/8570dfe0619e571a74f4c43dd1f58348/4bd23a18257e63dd-d6/s1280x1920/b34051c406eddd0e752d6183412fc47b74deaaf8.png"
+    <img class="nodrag" src="/comics/images/Than_Part2/Than_2_1.jpeg"
     width= 50%
     style="padding-top: 15px; padding-bottom: 15px;"
     />
     
-    <img class="nodrag" src="https://66.media.tumblr.com/6566a63ac393528e3cf712561aa76f5b/4034eb26057b4543-2f/s1280x1920/fcc5b5fbcc99689948a905aa41501d25a5afb512.png"
+    <img class="nodrag" src="/comics/images/Than_Part2/Than_2_2.jpeg"
     width= 50%
     style="padding-top: 15px; padding-bottom: 15px;"
     />
     
-    <img class="nodrag" src="https://66.media.tumblr.com/d037fe76c76dd572eb9cff53b009d2d9/db724a371a5fe7b5-46/s1280x1920/1bd524d28915858229381e07230987b4d90c2837.png"
+    <img class="nodrag" src="/comics/images/Than_Part2/Than_2_3.jpeg"
     width= 50%
     style="padding-top: 15px; padding-bottom: 15px;"
     />
     
-    <img class="nodrag" src="https://66.media.tumblr.com/1edd17af46e0bc345a15cdf20bab072c/cfda011fc199c9a6-a3/s1280x1920/acc81fb54cb729ee5a8af366000c4c1263a01565.png"
+    <img class="nodrag" src="/comics/images/Than_Part2/Than_2_4.jpeg"
     width= 50%
     style="padding-top: 15px; padding-bottom: 15px;"
     />
     
-    <img class="nodrag" src="https://66.media.tumblr.com/a6d8b6697d02c1c55504263ed8e149f1/ae82d4f9b62bd6e6-09/s1280x1920/fff5d4c063aa0e2a643e6539bc0c8525797cda62.png"
+    <img class="nodrag" src="/comics/images/Than_Part2/Than_2_5.jpeg"
     width= 50%
     style="padding-top: 15px; padding-bottom: 15px;"
     />
     
-    <img class="nodrag" src="https://66.media.tumblr.com/953566fd6665b90bf5f7d6f827ba988f/7d6076689f2a7131-7b/s1280x1920/7dd6edee53b38648fbcb02944cda19655a07c170.png"
+    <img class="nodrag" src="/comics/images/Than_Part2/Than_2_Pick.jpeg"
     width= 50%
     style="padding-top: 15px; padding-bottom: 100px;"
     />
@@ -191,37 +186,55 @@
 
 <div3 class="unselectable"><a href="/comics/thanc"  style="text-decoration: none; color:#6e6e6e; cursor:default"><i>Character Sheet</i></a></div3>
 
-<div4><img id="light_pic" src="https://66.media.tumblr.com/09580e9c049d32b4eada2009895256a0/c2871ce6fae5f371-e4/s400x600/684278039e16a5e15f9bde08f05414f56fe9de91.png" height="75px" onclick="light_toggle()"></div4>
+<div4><img id="LightOff" src="/comics/images/Light_Off.png" height="75px" onclick="turnOnLight()">
+  <img id="LightOn" src="/comics/images/Light_On.png" height="75px" onclick="turnOffLight()" style="display: none;"></div4>
 
 <script>
-    document.onkeydown = function(e) {
-            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)){
-            }
-            return false;
-    };
-    </script>
-    
-<script language="javascript">
-    function light_toggle() {
+function turnOnLight() {
+  
+  // Toggle "LightOff" sprite
+  var x = document.getElementById("LightOff");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+   // Toggle "LightOn" sprite
+  var x = document.getElementById("LightOn");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+  document.getElementById("title_text").style.color = "black";
+            
+  document.body.style.backgroundColor = "white";
+}
 
-        if (document.getElementById("light_pic").src == "https://66.media.tumblr.com/09580e9c049d32b4eada2009895256a0/c2871ce6fae5f371-e4/s400x600/684278039e16a5e15f9bde08f05414f56fe9de91.png") 
-        {   
-            document.getElementById("light_pic").src = "https://66.media.tumblr.com/4abc34381cbaa23353a9e867fec90eda/a06a0bd4ea229b11-88/s400x600/87b892646ed632b70fdf5fbdb757fd0bec816af0.png";
+function turnOffLight() {
+  
+  // Toggle "LightOff" sprite
+  var x = document.getElementById("LightOff");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+   // Toggle "LightOn" sprite
+  var x = document.getElementById("LightOn");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+  document.getElementById("title_text").style.color = "white";
             
-            document.getElementById("title_text").style.color = "black";
-            
-            document.body.style.backgroundColor = "white";
-        }
-        else 
-        {
-            document.getElementById("light_pic").src = "https://66.media.tumblr.com/09580e9c049d32b4eada2009895256a0/c2871ce6fae5f371-e4/s400x600/684278039e16a5e15f9bde08f05414f56fe9de91.png";
-            
-            document.getElementById("title_text").style.color = "white";
-            
-            document.body.style.backgroundColor = "black";
-        }
-    }
+  document.body.style.backgroundColor = "black";
+}
 </script>
-
-</head>
+  
 </html>
