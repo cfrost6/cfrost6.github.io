@@ -222,28 +222,47 @@
 
 <div3 class="unselectable"><a href="/comics/cofc"  style="text-decoration: none; color:#6e6e6e; cursor:default"><i>Character Sheet</i></a></div3>
 
-<div4><img id="light_pic" src="/comics/images/Light_Off.png" height="75px" onclick="light_toggle()"></div4>
+<div4><img id="LightOff" src="/comics/images/Light_Off.png" height="75px" onclick="turnOnLight()">
+  <img id="LightOn" src="/comics/images/Light_On.png" height="75px" onclick="turnOffLight()" style="display: none;"></div4>
 
 <script>
-    document.onkeydown = function(e) {
-            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)){
-            }
-            return false;
-    };
-    </script>
-    
-<script language="javascript">
-    function light_toggle() {
+function turnOnLight() {
+  
+  // Toggle "LightOff" sprite
+  var x = document.getElementById("LightOff");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+   // Toggle "LightOn" sprite
+  var x = document.getElementById("LightOn");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-        if (document.getElementById("light_pic").src == "/comics/images/Light_Off.png") 
-        {   
-            document.getElementById("light_pic").src = "/comics/images/Light_On.png";
-            
-            document.getElementById("title_text").style.color = "black";
-            
-            document.body.style.backgroundColor = "white";
-        }
-    }
+function turnOffLight() {
+  
+  // Toggle "LightOff" sprite
+  var x = document.getElementById("LightOff");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+   // Toggle "LightOn" sprite
+  var x = document.getElementById("LightOn");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 </script>
 
 </head>
