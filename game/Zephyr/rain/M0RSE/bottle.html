@@ -1,0 +1,212 @@
+<html>
+<head>
+</head>
+  
+<body oncontextmenu="return false;"></body>
+  <style type="text/css">
+    body {
+      background-color: #000000;
+    }
+    
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;   
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1px 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+
+    .button1 {
+    background-color: white; 
+    color: black; 
+    border: 5px solid #4CAF50;
+    }
+
+    .button1:hover {
+     background-color: #4CAF50;
+    color: white;
+    }
+    
+    div {
+    height: auto;
+    position: fixed;
+    bottom: 20px;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 16px;
+    font-family: Verdana;
+    text-align: center;
+    }
+    
+    div2 {
+    height: auto;
+    position: fixed;
+    top: 75%;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 22px;
+    font-family: Ink Free;
+    color: white;
+    text-align: left;
+    }
+    
+    div3 {
+    font-size: 22px;
+    font-family: Ink Free;
+    color: white;
+    text-align: left;
+    }
+    
+    div4 {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 25px 0;
+    font-family: Verdana;   
+    text-align: center;
+    background-color: #ffffff;
+    z-index: 3;
+    }
+    
+    div5 {
+    font-family: Verdana;
+    font-size: 18px;
+    text-align: right;
+    }
+    div5:hover {
+    color: red;
+    }
+    
+    .topright {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 12px;
+    }
+    
+    #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    }
+    
+    p {
+    width: 45%;
+    margin: auto;
+    }
+    
+    .unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    
+    .nodrag {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;  
+    -ms-user-select: none;
+    }
+    
+    img {
+    height: 450px;
+    width: auto;
+    }
+    
+    @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px) {
+    img {
+    height: auto;
+    width: 90%;
+    }
+    p {
+    width: 95%;
+    margin: auto;
+    }
+    }
+  </style>
+
+<center>
+    <img class="nodrag" src="/game/images/Bottle.jpeg"
+    style="padding-top: 15px; padding-bottom: 15px;"
+    />
+</center>
+
+<div3><p class="unselectable">
+The <a href="https://drive.google.com/file/d/1_yCQRiWB2Ik8lt_R-s9TmIhgru1MgRNZ/view?usp=sharing" target="_blank" style="text-decoration: none; color:#4CAF50; cursor:default">paper</a> from the bottle looks like a jumbled mess...
+</p></div3>
+
+<div><a href="/game/Zephyr/rain/M0RSE" class="button button1 unselectable">Back</a></div>
+
+<script>
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)){
+            }
+            return false;
+    };
+</script>
+
+<img style="position: absolute; right: 5px; bottom: 5px; width: 75px; height: 75px;" onclick="hint(); on()" onMouseOver="this.style.cursor='pointer'" 
+     src="/game/images/Hint.webp"></img>
+
+<div4 id="popup" style="display:none">
+    <b>O</b>nce you solve the pape<b>r</b> cr<b>a</b>ft do you really eve<b>n</b> need a hint? Isn't the paper itself <b>g</b>ood <b>e</b>nough??
+    <div5 onclick="hint(); off()" onMouseOver="this.style.cursor='pointer'" class="topright"><b>X</b></div5>
+</div4>
+
+<script>
+function hint() {
+  var x = document.getElementById("popup");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<div5 id="overlay"></div5>
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+<audio controls style="zoom: 80%; 
+    position: absolute;
+    bottom: 1em;
+    left: 1em;">
+  <source src="https://feeds.soundcloud.com/stream/711965326-chris-f-367859294-swamp.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+</html>
