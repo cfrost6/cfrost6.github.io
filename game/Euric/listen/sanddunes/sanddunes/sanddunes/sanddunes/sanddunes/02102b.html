@@ -1,0 +1,133 @@
+<html>
+<head>
+</head>
+  
+<body oncontextmenu="return false;"></body>
+  <style type="text/css">
+    body {
+      background-color: #000000;
+    }
+    
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;   
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1px 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+
+    .button1 {
+    background-color: white; 
+    color: black; 
+    border: 5px solid #4CAF50;
+    }
+
+    .button1:hover {
+     background-color: #4CAF50;
+    color: white;
+    }
+    
+    div {
+    height: auto;
+    position: fixed;
+    bottom: 20px;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 16px;
+    font-family: Verdana;
+    text-align: center;
+    }
+    
+    div2 {
+    height: auto;
+    position: fixed;
+    top: 75%;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 22px;
+    font-family: Ink Free;
+    color: white;
+    text-align: left;
+    }
+    
+    div3 {
+    font-size: 22px;
+    font-family: Ink Free;
+    color: white;
+    text-align: left;
+    }
+    
+    p {
+    width: 45%;
+    margin: auto;
+    }
+    
+    .unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    
+    .nodrag {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;  
+    -ms-user-select: none;
+    }
+    
+    img {
+    height: 450px;
+    width: auto;
+    }
+    
+    @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px) {
+    img {
+    height: auto;
+    width: 90%;
+    }
+    p {
+    width: 95%;
+    margin: auto;
+    font-size: 30px;
+    }
+    }
+  </style>
+
+<center>
+    <img class="nodrag" src="/game/images/Chest_Red.jpeg"
+    height= 70%
+    style="padding-top: 15px; padding-bottom: 15px;"
+    />
+</center>
+
+<div3><p class="unselectable">
+After searching the desert endlessly you find a small red chest. Of course, it's locked.
+</p></div3>
+
+<div><a href="/game/Euric/listen/sanddunes/sanddunes/sanddunes/sanddunes/sanddunes" class="button button1 unselectable">Back</a></div>
+
+<script>
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)){
+            }
+            return false;
+    };
+</script>
+
+</html>
