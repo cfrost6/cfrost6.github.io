@@ -1,0 +1,114 @@
+<html>
+<head>
+</head>
+  
+<body oncontextmenu="return false;"></body>
+  <style type="text/css">
+    body {
+      background-color: #000000;
+    }
+    
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;   
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1px 15px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+
+    .button1 {
+    background-color: white; 
+    color: black; 
+    border: 5px solid #4CAF50;
+    }
+
+    .button1:hover {
+     background-color: #4CAF50;
+    color: white;
+    }
+    
+    div {
+    height: auto;
+    position: fixed;
+    bottom: 20px;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 16px;
+    font-family: Verdana;
+    text-align: center;
+    }
+    
+    .unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    
+    .nodrag {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;  
+    -ms-user-select: none;
+    }
+    
+    img {
+    position: relative;
+    height: 80%;
+    width: auto;
+    }
+    
+    @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px) {
+    img {
+    height: auto;
+    width: 90%;
+    }
+    p {
+    width: 95%;
+    margin: auto;
+    }
+    }
+  </style>
+
+<center>
+    <img class="nodrag" src="/game/images/Attack.webp"
+    style="padding-top: 15px; padding-bottom: 15px;"
+    />
+</center>
+
+<div>
+  <a href="/game/FINAL_BATTL3/SLEEKS/TH3_F1GHT/fuse/continue/fuse_2" class="button button1 unselectable">Back</a>
+  <a href="/game/FINAL_BATTL3/SLEEKS/TH3_F1GHT/fuse/continue/fuse_2/ATTACK/WINNER" class="button button1 unselectable">Continue</a>
+</div>
+
+<script>
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)){
+            }
+            return false;
+    };
+</script>
+
+<audio controls style="zoom: 80%; 
+    position: absolute;
+    top: 1em;
+    right: 1em;">
+  <source src="https://feeds.soundcloud.com/stream/715957903-chris-f-367859294-attack.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+</html>
