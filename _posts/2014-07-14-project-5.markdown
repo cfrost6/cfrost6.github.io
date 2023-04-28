@@ -1,7 +1,0 @@
----
-layout: default
-modal-id: 5
-img: ENG.png
-alt: image-alt
-description: This is
----
