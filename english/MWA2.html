@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Frost's Portfolio</title>
+    <link rel="shortcut icon" type="image/jpg" href="/pictures/book.ico"/>
+</head>
+
+<style>
+    p {
+        width: 85%;
+        margin: auto;
+        font-size: 18px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #ul2 {
+        width: 85%;
+        margin: auto;
+        padding-left: 0px;
+        margin-top: -40px;
+        list-style-type:circle;
+    }
+    #li2 {
+        list-style: disc outside none;
+        display: list-item;
+        margin-left: 40px;
+        margin-bottom: 15px;
+        font-family: BodyFont;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+</style>
+
+ <body>
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">Frost's Portfolio</div>
+        <!-- Nav Menu -->
+        <ul class="nav-links">
+        <!-- Checkbox workaround -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- Menus -->
+        <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="https://cfrost6.github.io/">Personal Site</a></li>
+        </ul>
+    </nav>
+
+    <!-- Pictures/Text -->
+    <div class="wrapper">
+        
+        <p>
+            &emsp; The PDF below showcases two sets of instructions and a memorandum 
+            that discusses key decisions that were made. The first instruction 
+            set is aimed at general American consumers, and the second was made 
+            for children between the ages of 7 and 9.
+        <br>
+        </p>
+
+        <iframe src="/PDFs/InstructionSets wMemo.pdf" 
+        style="width: 80vw; height: 100vh; 
+        border: none; margin: auto; display:block; margin-bottom: 80px;"></iframe>
+
+        <p>
+            <u><i>Revisions made:</i></u>
+            <div id="ul2">
+                <div id="li2">On the second page, under step 3, I changed "caution" to "warning"
+                    to ensure the reader took the warning seriously.
+                </div>
+
+                <div id="li2">On the fourth page, under step 4, it used to read "Make sure to leave
+                    a small portion (about 1/2 cm) uncut...", but I changed the measurement
+                    to "about the size of your fingernail". This way, kids are more likely
+                    to understand my instructions.
+                </div>
+            </div>
+        </p>
+    </div>
+
+    <!-- Black bar across bottom of page -->
+    <div id="footer"></div>
+
+</body>
+
+</html>

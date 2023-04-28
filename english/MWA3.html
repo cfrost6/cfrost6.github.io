@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Frost's Portfolio</title>
+    <link rel="shortcut icon" type="image/jpg" href="/pictures/book.ico"/>
+</head>
+
+<style>
+    p {
+        width: 85%;
+        margin: auto;
+        font-size: 18px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #ul2 {
+        width: 85%;
+        margin: auto;
+        padding-left: 0px;
+        margin-top: -40px;
+        list-style-type:circle;
+    }
+    #li2 {
+        list-style: disc outside none;
+        display: list-item;
+        margin-left: 40px;
+        margin-bottom: 15px;
+        font-family: BodyFont;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+</style>
+
+ <body>
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">Frost's Portfolio</div>
+        <!-- Nav Menu -->
+        <ul class="nav-links">
+        <!-- Checkbox workaround -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- Menus -->
+        <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="https://cfrost6.github.io/">Personal Site</a></li>
+        </ul>
+    </nav>
+
+    <!-- Pictures/Text -->
+    <div class="wrapper">
+        
+        <p>
+            &emsp; This PDF contains the recommendation report I created on green ways to exterminate
+            cockroaches from an apartment complex. There are three total recommendations made, along with
+            discussion of their cost, application, and effectiveness. Since this document required outside
+            research, my methology and references are provided.
+        <br>
+        </p>
+
+        <iframe src="/PDFs/Recommendation Report.pdf" 
+        style="width: 80vw; height: 100vh; 
+        border: none; margin: auto; display:block; margin-bottom: 80px;"></iframe>
+
+        <p>
+            <u><i>Revisions made:</i></u>
+
+            <div id="ul2">
+                <div id="li2">On the third page, in the last paragraph, a typo was corrected. Instead of "borax
+                    acid" it now reads "boric acid." 
+                </div>
+
+                <div id="li2">On the fourth page, I added the conversion between ounces and miligrams, so that
+                    the readers could make sense of the included graphic without having to do their own calculations.
+                </div>
+
+                <div id="li2">On the fifth page, I corrected "manufactures" to "manufacturers" in the second sentence
+                    of the second paragraph.
+                </div>
+
+                <div id="li2">On the sixth page, the last sentence of the first paragraph used to read "My last 
+                    conclusion is that baking soda is a decent alternative but would require a decent amount of 
+                    maintenance". I changed the first occurence of "decent" to "alright" to avoid the repitition and 
+                    to allow for the sentece to read better.
+                </div>
+            </div>
+        </p>
+    </div>
+
+    <!-- Black bar across bottom of page -->
+    <div id="footer"></div>
+
+</body>
+
+</html>
