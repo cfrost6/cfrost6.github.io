@@ -37,6 +37,14 @@
     a:hover {
         text-decoration: underline;
     }
+    @media only screen and (max-width: 768px){
+    .desktop_view {
+    display: none;
+    }
+    .mobile_view {
+        display: block;
+    }
+    }
 </style>
 
  <body>
@@ -57,6 +65,7 @@
     </nav>
 
     <!-- Pictures/Text -->
+    <span class="desktop_view">
     <div class="wrapper">
         
         <p>
@@ -102,6 +111,56 @@
             </div>
         </p>
     </div>
+    </span>
+     
+         <span class="mobile_view">
+    <div class="wrapper">
+        
+        <p>
+            &emsp; This PDF contains the recommendation report I created on green ways to exterminate
+            cockroaches from an apartment complex. There are three total recommendations made, along with
+            discussion of their cost, application, and effectiveness. Since this document required outside
+            research, my methology and references are provided.
+        </p>
+        
+        <p>
+            <u><i>Revisions made:</i></u>
+
+            <div id="ul2">
+                <div id="li2">On the third page, in the last paragraph, a typo was corrected. Instead of "borax
+                    acid" it now reads "boric acid." 
+                </div>
+
+                <div id="li2">On the fourth page, I added the conversion between ounces and miligrams, so that
+                    the readers could make sense of the included graphic without having to do their own calculations.
+                </div>
+
+                <div id="li2">On the fifth page, I corrected "manufactures" to "manufacturers" in the second sentence
+                    of the second paragraph.
+                </div>
+
+                <div id="li2">On the sixth page, the last sentence of the first paragraph used to read "My last 
+                    conclusion is that baking soda is a decent alternative but would require a decent amount of 
+                    maintenance". I changed the first occurence of "decent" to "alright" to avoid the repitition and 
+                    to allow for the sentece to read better.
+                </div>
+            </div>
+            
+            <br><br>
+            
+            If you have any issues viewing the PDF, click 
+            <b><a style="color: #097bed" href="/english/PDFs/Recommendation Report.pdf">here</a></b>
+            to open it separately.
+            
+            <br>
+        </p>
+
+        <iframe src="/english/PDFs/Recommendation Report.pdf" 
+        style="width: 80vw; height: 100vh; 
+        border: none; margin: auto; display:block; margin-bottom: 80px;"></iframe>
+
+    </div>
+    </span>
 
     <!-- Black bar across bottom of page -->
     <div id="footer"></div>
