@@ -37,6 +37,14 @@
     a:hover {
         text-decoration: underline;
     }
+    @media only screen and (max-width: 768px){
+    .desktop_view {
+    display: none;
+    }
+    .mobile_view {
+        display: block;
+    }
+    }
 </style>
 
  <body>
@@ -55,8 +63,9 @@
             <li><a href="/">Personal Site</a></li>
         </ul>
     </nav>
-
+        
     <!-- Pictures/Text -->
+    <span class="desktop_view">
     <div class="wrapper">
         
         <p>
@@ -64,17 +73,10 @@
             that discusses key decisions that were made. The first instruction 
             set is aimed at general American consumers, and the second was made 
             for children between the ages of 7 and 9.
-            
-            <br><br>
-            
-            If you have any issues viewing the PDF, click 
-            <b><a style="color: #097bed" href="/english/PDFs/InstructionSets wMemo.pdf">here</a></b>
-            to open it separately.
-            
-            <br>
+        <br>
         </p>
 
-        <iframe src="/english/PDFs/InstructionSets wMemo.pdf" 
+        <iframe src="/PDFs/InstructionSets wMemo.pdf" 
         style="width: 80vw; height: 100vh; 
         border: none; margin: auto; display:block; margin-bottom: 80px;"></iframe>
 
@@ -93,6 +95,39 @@
             </div>
         </p>
     </div>
+    </span>
+
+    <span class="mobile_view">
+        <div class="wrapper">
+            
+            <p>
+                &emsp; The PDF below showcases two sets of instructions and a memorandum 
+                that discusses key decisions that were made. The first instruction 
+                set is aimed at general American consumers, and the second was made 
+                for children between the ages of 7 and 9.
+            <br>
+            </p>
+
+            <p>
+                <u><i>Revisions made:</i></u>
+                <div id="ul2">
+                    <div id="li2">On the second page, under step 3, I changed "caution" to "warning"
+                        to ensure the reader took the warning seriously.
+                    </div>
+    
+                    <div id="li2">On the fourth page, under step 4, it used to read "Make sure to leave
+                        a small portion (about 1/2 cm) uncut...", but I changed the measurement
+                        to "about the size of your fingernail". This way, kids are more likely
+                        to understand my instructions.
+                    </div>
+                </div>
+            </p>
+    
+            <iframe src="/english/PDFs/InstructionSets wMemo.pdf" 
+            style="width: 80vw; height: 100vh; 
+            border: none; margin: auto; display:block; margin-bottom: 80px;"></iframe>
+        </div>
+        </span>
 
     <!-- Black bar across bottom of page -->
     <div id="footer"></div>
