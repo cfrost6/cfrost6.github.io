@@ -1,0 +1,52 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+* {
+  -moz-box-sizing: inherit;
+       box-sizing: inherit;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+button {
+    width: 125px;
+    height: 50px;
+    display:inline-block;
+    margin-left: 50px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.gameButton {
+  background-color: rgb(247, 206, 44);
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 2px solid;
+  outline-color: rgba(179, 52, 52, 0);
+  outline-offset: 0px;
+  text-shadow: none;
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  outline-color: rgba(205, 127, 11, 0.5);
+  outline-offset: 0px;
+}
+
+.gameButton:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-offset: 15px;
+  outline-color: rgba(197, 129, 129, 0);
+  text-shadow: 1px 1px 2px #427388;
+}
