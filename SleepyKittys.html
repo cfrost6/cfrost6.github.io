@@ -57,6 +57,40 @@
         width: 1056px;
         height: 95px;
     }
+    #homeButton {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    font-size: 16px;
+    font-family: Verdana;
+    text-align: center;
+    }
+    
+    .button0 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;   
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1px 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+
+    .button1 {
+    background-color: white; 
+    color: black; 
+    border: 5px solid #4CAF50;
+    }
+
+    .button1:hover {
+     background-color: #4CAF50;
+    color: white;
+    }
 </style>
 
 <canvas id="canvas"></canvas>
@@ -77,6 +111,8 @@
         <button class="gameButton" onclick="playAgain()">Play Again</button>
     </div>
 </div>
+
+<div id="homeButton"><a href="https://cfrost6.github.io/" class="button0 button1">Back</a></div>
 
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
