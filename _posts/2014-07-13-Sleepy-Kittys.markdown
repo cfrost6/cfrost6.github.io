@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 6
-img: TBD.png
+img: CatGame.png
 alt: image-alt
 description: Place holder for another project!
 ---
