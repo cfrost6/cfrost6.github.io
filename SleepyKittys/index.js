@@ -13,26 +13,26 @@ let bigDogs
 let lastLevel = false
 
 const player = new Player({
-    imageSrc: './img/cat/myIdleRight.png',
+    imageSrc: './SleepyKittys/img/cat/myIdleRight.png',
     frameRate: 23,
     animations: {
         idleRight: {
             frameRate: 23,
             frameBuffer: 10,
             loop: true,
-            imageSrc: './img/cat/myIdleRight.png',
+            imageSrc: './SleepyKittys/img/cat/myIdleRight.png',
         },
         idleLeft: {
             frameRate: 23,
             frameBuffer: 10,
             loop: true,
-            imageSrc: './img/cat/myIdleLeft.png',
+            imageSrc: './SleepyKittys/img/cat/myIdleLeft.png',
         },
         runRight: {
             frameRate: 6,
             frameBuffer: 3,
             loop: true,
-            imageSrc: './img/cat/myWalkRight.png',
+            imageSrc: './SleepyKittys/img/cat/myWalkRight.png',
         },
         runLeft: {
             frameRate: 6,
@@ -44,31 +44,31 @@ const player = new Player({
             frameRate: 1,
             frameBuffer: 1,
             loop: true,
-            imageSrc: './img/cat/myJumpRight.png',
+            imageSrc: './SleepyKittys/img/cat/myJumpRight.png',
         },
         jumpLeft: {
             frameRate: 1,
             frameBuffer: 1,
             loop: true,
-            imageSrc: './img/cat/myJumpLeft.png',
+            imageSrc: './SleepyKittys/img/cat/myJumpLeft.png',
         },
         invincibility: {
             frameRate: 4,
             frameBuffer: 12,
             loop: true,
-            imageSrc: './img/cat/invincibility.png',
+            imageSrc: './SleepyKittys/img/cat/invincibility.png',
         },
         sleep: {
             frameRate: 34,
             frameBuffer: 12,
             loop: false,
-            imageSrc: './img/cat/roseSleep.png',
+            imageSrc: './SleepyKittys/img/cat/roseSleep.png',
         },
         enterDoor: {
             frameRate: 12,
             frameBuffer: 8,
             loop: false,
-            imageSrc: './img/cat/myWalkExit.png',
+            imageSrc: './SleepyKittys/img/cat/myWalkExit.png',
             onComplete: () => {
                 gsap.to(overlay, {
                     opacity: 1,
@@ -100,7 +100,7 @@ let levels = {
                     x: 0,
                     y: 0,
                 },
-                imageSrc: './img/Level 1.png'
+                imageSrc: './SleepyKittys/img/Level 1.png'
             })
 
             smallDogs = []
@@ -113,7 +113,7 @@ let levels = {
                         x: 880,
                         y: 312, 
                     },
-                    imageSrc: './img/myDoorOpen.png',
+                    imageSrc: './SleepyKittys/img/myDoorOpen.png',
                     frameRate: 6,
                     frameBuffer: 6,
                     loop: false,
@@ -136,7 +136,7 @@ let levels = {
                     x: 0,
                     y: 0,
                 },
-                imageSrc: './img/Level 2.png'
+                imageSrc: './SleepyKittys/img/Level 2.png'
             })
 
             smallDogs = [
@@ -145,21 +145,21 @@ let levels = {
                         x: 615,
                         y: 418, 
                     },
-                    imageSrc: './img/dog/mapleSleep_Big.png',
+                    imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                     frameRate: 4,
                     frameBuffer: 20,
                     loop: true,
                     autoplay: true,
                     animations: {
                         sleepDog: {
-                            imageSrc: './img/dog/mapleSleep_Big.png',
+                            imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                             frameRate: 4,
                             frameBuffer: 20,
                             loop: true,
                             autoplay: true,
                         },
                         alertDog: {
-                            imageSrc:  './img/dog/mapleAlert_Big.png',
+                            imageSrc:  './SleepyKittys/img/dog/mapleAlert_Big.png',
                             frameRate: 8,
                             frameBuffer: 9,
                             loop: false,
@@ -177,7 +177,7 @@ let levels = {
                         x: 880,
                         y: 312, 
                     },
-                    imageSrc: './img/myDoorOpen.png',
+                    imageSrc: './SleepyKittys/img/myDoorOpen.png',
                     frameRate: 6,
                     frameBuffer: 6,
                     loop: false,
@@ -200,7 +200,7 @@ let levels = {
                     x: 0,
                     y: 0,
                 },
-                imageSrc: './img/Level 3.png'
+                imageSrc: './SleepyKittys/img/Level 3.png'
             })
 
             smallDogs = []
@@ -211,21 +211,21 @@ let levels = {
                         x: 280,
                         y: 312, 
                     },
-                    imageSrc: './img/dog/aspenSleep_bigAlt.png',
+                    imageSrc: './SleepyKittys/img/dog/aspenSleep_bigAlt.png',
                     frameRate: 4,
                     frameBuffer: 35,
                     loop: true,
                     autoplay: true,
                     animations: {
                         sleepDog: {
-                            imageSrc: './img/dog/aspenSleep_bigAlt.png',
+                            imageSrc: './SleepyKittys/img/dog/aspenSleep_bigAlt.png',
                             frameRate: 4,
                             frameBuffer: 35,
                             loop: true,
                             autoplay: true,
                         },
                         alertDog: {
-                            imageSrc:  './img/dog/aspenAlert_Big.png',
+                            imageSrc:  './SleepyKittys/img/dog/aspenAlert_Big.png',
                             frameRate: 9,
                             frameBuffer: 9,
                             loop: false,
@@ -241,7 +241,7 @@ let levels = {
                         x: 880,
                         y: 312, 
                     },
-                    imageSrc: './img/myDoorOpen.png',
+                    imageSrc: './SleepyKittys/img/myDoorOpen.png',
                     frameRate: 6,
                     frameBuffer: 6,
                     loop: false,
@@ -264,7 +264,7 @@ let levels = {
                     x: 0,
                     y: 0,
                 },
-                imageSrc: './img/Level 4.png'
+                imageSrc: './SleepyKittys/img/Level 4.png'
             })
 
             smallDogs = [
@@ -273,21 +273,21 @@ let levels = {
                         x: 400,
                         y: 82, 
                     },
-                    imageSrc: './img/dog/mapleSleep_Big.png',
+                    imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                     frameRate: 4,
                     frameBuffer: 20,
                     loop: true,
                     autoplay: true,
                     animations: {
                         sleepDog: {
-                            imageSrc: './img/dog/mapleSleep_Big.png',
+                            imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                             frameRate: 4,
                             frameBuffer: 20,
                             loop: true,
                             autoplay: true,
                         },
                         alertDog: {
-                            imageSrc:  './img/dog/mapleAlert_Big.png',
+                            imageSrc:  './SleepyKittys/img/dog/mapleAlert_Big.png',
                             frameRate: 8,
                             frameBuffer: 9,
                             loop: false,
@@ -303,21 +303,21 @@ let levels = {
                         x: 850,
                         y: 201, 
                     },
-                    imageSrc: './img/dog/aspenSleep_bigAlt.png',
+                    imageSrc: './SleepyKittys/img/dog/aspenSleep_bigAlt.png',
                     frameRate: 4,
                     frameBuffer: 35,
                     loop: true,
                     autoplay: true,
                     animations: {
                         sleepDog: {
-                            imageSrc: './img/dog/aspenSleep_bigAlt.png',
+                            imageSrc: './SleepyKittys/img/dog/aspenSleep_bigAlt.png',
                             frameRate: 4,
                             frameBuffer: 35,
                             loop: true,
                             autoplay: true,
                         },
                         alertDog: {
-                            imageSrc:  './img/dog/aspenAlert_Big.png',
+                            imageSrc:  './SleepyKittys/img/dog/aspenAlert_Big.png',
                             frameRate: 9,
                             frameBuffer: 9,
                             loop: false,
@@ -333,7 +333,7 @@ let levels = {
                         x: 956,
                         y: 298, 
                     },
-                    imageSrc: './img/myDoorOpen_small.png',
+                    imageSrc: './SleepyKittys/img/myDoorOpen_small.png',
                     frameRate: 6,
                     frameBuffer: 6,
                     loop: false,
@@ -356,7 +356,7 @@ let levels = {
                     x: 0,
                     y: 0,
                 },
-                imageSrc: './img/Level 5.png'
+                imageSrc: './SleepyKittys/img/Level 5.png'
             })
 
             smallDogs = [
@@ -365,21 +365,21 @@ let levels = {
                         x: 425,
                         y: 130, 
                     },
-                    imageSrc: './img/dog/mapleSleep_Big.png',
+                    imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                     frameRate: 4,
                     frameBuffer: 20,
                     loop: true,
                     autoplay: true,
                     animations: {
                         sleepDog: {
-                            imageSrc: './img/dog/mapleSleep_Big.png',
+                            imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                             frameRate: 4,
                             frameBuffer: 20,
                             loop: true,
                             autoplay: true,
                         },
                         alertDog: {
-                            imageSrc:  './img/dog/mapleAlert_Big.png',
+                            imageSrc:  './SleepyKittys/img/dog/mapleAlert_Big.png',
                             frameRate: 8,
                             frameBuffer: 9,
                             loop: false,
@@ -395,21 +395,21 @@ let levels = {
                         x: 627,
                         y: 405, 
                     },
-                    imageSrc: './img/dog/aspenSleep_bigAlt.png',
+                    imageSrc: './SleepyKittys/img/dog/aspenSleep_bigAlt.png',
                     frameRate: 4,
                     frameBuffer: 35,
                     loop: true,
                     autoplay: true,
                     animations: {
                         sleepDog: {
-                            imageSrc: './img/dog/aspenSleep_bigAlt.png',
+                            imageSrc: './SleepyKittys/img/dog/aspenSleep_bigAlt.png',
                             frameRate: 4,
                             frameBuffer: 35,
                             loop: true,
                             autoplay: true,
                         },
                         alertDog: {
-                            imageSrc:  './img/dog/aspenAlert_Big.png',
+                            imageSrc:  './SleepyKittys/img/dog/aspenAlert_Big.png',
                             frameRate: 9,
                             frameBuffer: 9,
                             loop: false,
@@ -425,7 +425,7 @@ let levels = {
                         x: 920,
                         y: 312, 
                     },
-                    imageSrc: './img/myDoorOpen.png',
+                    imageSrc: './SleepyKittys/img/myDoorOpen.png',
                     frameRate: 6,
                     frameBuffer: 6,
                     loop: false,
@@ -449,7 +449,7 @@ let levels = {
                     x: 0,
                     y: 0,
                 },
-                imageSrc: './img/Level 6.png'
+                imageSrc: './SleepyKittys/img/Level 6.png'
             })
 
             smallDogs = [
@@ -458,21 +458,21 @@ let levels = {
                         x: 225,
                         y: 226, 
                     },
-                    imageSrc: './img/dog/mapleSleep_Big.png',
+                    imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                     frameRate: 4,
                     frameBuffer: 20,
                     loop: true,
                     autoplay: true,
                     animations: {
                         sleepDog: {
-                            imageSrc: './img/dog/mapleSleep_Big.png',
+                            imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                             frameRate: 4,
                             frameBuffer: 20,
                             loop: true,
                             autoplay: true,
                         },
                         alertDog: {
-                            imageSrc:  './img/dog/mapleAlert_Big.png',
+                            imageSrc:  './SleepyKittys/img/dog/mapleAlert_Big.png',
                             frameRate: 8,
                             frameBuffer: 9,
                             loop: false,
@@ -485,21 +485,21 @@ let levels = {
                         x: 520,
                         y: 322, 
                     },
-                    imageSrc: './img/dog/mapleSleep_Big.png',
+                    imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                     frameRate: 4,
                     frameBuffer: 20,
                     loop: true,
                     autoplay: true,
                     animations: {
                         sleepDog: {
-                            imageSrc: './img/dog/mapleSleep_Big.png',
+                            imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                             frameRate: 4,
                             frameBuffer: 20,
                             loop: true,
                             autoplay: true,
                         },
                         alertDog: {
-                            imageSrc:  './img/dog/mapleAlert_Big.png',
+                            imageSrc:  './SleepyKittys/img/dog/mapleAlert_Big.png',
                             frameRate: 8,
                             frameBuffer: 9,
                             loop: false,
@@ -512,21 +512,21 @@ let levels = {
                         x: 900,
                         y: 165, 
                     },
-                    imageSrc: './img/dog/mapleSleep_Big.png',
+                    imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                     frameRate: 4,
                     frameBuffer: 20,
                     loop: true,
                     autoplay: true,
                     animations: {
                         sleepDog: {
-                            imageSrc: './img/dog/mapleSleep_Big.png',
+                            imageSrc: './SleepyKittys/img/dog/mapleSleep_Big.png',
                             frameRate: 4,
                             frameBuffer: 20,
                             loop: true,
                             autoplay: true,
                         },
                         alertDog: {
-                            imageSrc:  './img/dog/mapleAlert_Big.png',
+                            imageSrc:  './SleepyKittys/img/dog/mapleAlert_Big.png',
                             frameRate: 8,
                             frameBuffer: 9,
                             loop: false,
@@ -542,21 +542,21 @@ let levels = {
                         x: 410,
                         y: 404, 
                     },
-                    imageSrc: './img/dog/aspenSleep_bigAlt.png',
+                    imageSrc: './SleepyKittys/img/dog/aspenSleep_bigAlt.png',
                     frameRate: 4,
                     frameBuffer: 35,
                     loop: true,
                     autoplay: true,
                     animations: {
                         sleepDog: {
-                            imageSrc: './img/dog/aspenSleep_bigAlt.png',
+                            imageSrc: './SleepyKittys/img/dog/aspenSleep_bigAlt.png',
                             frameRate: 4,
                             frameBuffer: 35,
                             loop: true,
                             autoplay: true,
                         },
                         alertDog: {
-                            imageSrc:  './img/dog/aspenAlert_Big.png',
+                            imageSrc:  './SleepyKittys/img/dog/aspenAlert_Big.png',
                             frameRate: 9,
                             frameBuffer: 9,
                             loop: false,
@@ -569,21 +569,21 @@ let levels = {
                         x: 795,
                         y: 72, 
                     },
-                    imageSrc: './img/dog/aspenSleep_bigAlt.png',
+                    imageSrc: './SleepyKittys/img/dog/aspenSleep_bigAlt.png',
                     frameRate: 4,
                     frameBuffer: 35,
                     loop: true,
                     autoplay: true,
                     animations: {
                         sleepDog: {
-                            imageSrc: './img/dog/aspenSleep_bigAlt.png',
+                            imageSrc: './SleepyKittys/img/dog/aspenSleep_bigAlt.png',
                             frameRate: 4,
                             frameBuffer: 35,
                             loop: true,
                             autoplay: true,
                         },
                         alertDog: {
-                            imageSrc:  './img/dog/aspenAlert_Big.png',
+                            imageSrc:  './SleepyKittys/img/dog/aspenAlert_Big.png',
                             frameRate: 9,
                             frameBuffer: 9,
                             loop: false,
@@ -602,7 +602,7 @@ let levels = {
                         // x: 80,
                         // y: 365, 
                     },
-                    imageSrc: './img/cat/sproutSleep_big.png',
+                    imageSrc: './SleepyKittys/img/cat/sproutSleep_big.png',
                     frameRate: 11,
                     frameBuffer: 11,
                     loop: true,
