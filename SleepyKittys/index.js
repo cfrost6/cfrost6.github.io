@@ -38,7 +38,7 @@ const player = new Player({
             frameRate: 6,
             frameBuffer: 3,
             loop: true,
-            imageSrc: './img/cat/myWalkLeft.png',
+            imageSrc: './SleepyKittys/img/cat/myWalkLeft.png',
         },
         jumpRight: {
             frameRate: 1,
