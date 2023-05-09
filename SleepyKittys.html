@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+</head>
+<link rel="stylesheet" href="/SleepyKittys/buttonStyle.css">
+
+<style>
+    body {
+        background: rgb(6, 6, 39);
+    }
+    #canvas {
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin:auto;
+    }
+    #startScreen {
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin:auto;
+        width: 1056px;
+        height: 480px;
+        text-align:center;
+        background-image: url("/SleepyKittys/img/StartScreen.png")
+    }
+    #endScreen {
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin:auto;
+        width: 1056px;
+        height: 480px;
+        text-align:center;
+        background-image: url("/SleepyKittys/img/EndScreen.png")
+    }
+    #buttonContainer1 {
+        position: absolute;
+        bottom: 0;
+        width: 1056px;
+        height: 120px;
+    }
+    #buttonContainer2 {
+        position: absolute;
+        bottom: 0;
+        width: 1056px;
+        height: 95px;
+    }
+    #buttonContainer3 {
+        position: absolute;
+        bottom: 0;
+        width: 1056px;
+        height: 95px;
+    }
+</style>
+
+<canvas id="canvas"></canvas>
+
+<div id="startScreen">
+    <div id="buttonContainer1">
+        <button class="gameButton" onclick="start()">Start</button>
+        <button class="gameButton" onclick="instructions()">How to Play</button>
+    </div>
+
+    <div id="buttonContainer2" style="display: none;">
+        <button class="gameButton" onclick="back()">Back</button>
+    </div>
+</div>
+
+<div id="endScreen" style="display: none;">
+    <div id="buttonContainer3">
+        <button class="gameButton" onclick="playAgain()">Play Again</button>
+    </div>
+</div>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+  integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="/SleepyKittys/js/utils.js"></script>
+<script src="/SleepyKittys/js/data/collisions.js"></script>
+<script src="/SleepyKittys/js/classes/CollisionBlock.js"></script>
+<script src="/SleepyKittys/js/classes/Sprite.js"></script>
+<script src="/SleepyKittys/js/classes/Player.js"></script>
+<script src="/SleepyKittys/js/eventListeners.js"></script>
+<script src="/SleepyKittys/index.js"></script>
+
+<!-- Start Screen Scripts -->
+<script>
+    player.preventInput = true
+
+    function start() {
+        document.getElementById("startScreen").style.display = "none";
+        player.preventInput = false
+    }
+
+    function instructions() {
+        document.getElementById("startScreen").style.backgroundImage= "url('/SleepyKittys/img/instructions.png')"
+        document.getElementById("buttonContainer1").style.display = "none"
+        document.getElementById("buttonContainer2").style.display = "block"
+    }
+
+    function back() {
+        document.getElementById("startScreen").style.backgroundImage= "url('/SleepyKittys/img/StartScreen.png')"
+        document.getElementById("buttonContainer1").style.display = "block"
+        document.getElementById("buttonContainer2").style.display = "none"
+    }
+</script>
+
+<!-- End Game Scripts -->
+<script>
+    function endGame() {
+        setTimeout(function() {
+            credits()}, 
+            8500
+        )
+    }
+
+    function credits() {
+        document.getElementById("canvas").style.display = "none";
+        document.getElementById("endScreen").style.display = "block";
+    }
+
+    function playAgain() {
+        gsap.to(overlay, {
+            opacity: 0
+        })
+        level = 1
+        levels[level].init()
+        player.position.x = 0
+        player.position.y = 400
+        player.preventInput = false
+        lastLevel = false
+        document.getElementById("canvas").style.display = "block";
+        document.getElementById("endScreen").style.display = "none";
+    }
+</script>
+
+</html>
