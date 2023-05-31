@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .slideshow {
+  position: relative;
+  overflow: hidden;
+  max-width: 825px;
+  width: 100%;
+  max-height: 300px;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+  .slideshow img.active {
+    opacity: 1;
+  }
+
+  .slideshow .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .slideshow .arrow.left {
+    left: 10px;
+  }
+
+  .slideshow .arrow.right {
+    right: 10px;
+  }
+  
+.arrow.left:hover, .arrow.right:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.arrow.left:not(:hover), .arrow.right:not(:hover) {
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.2s ease-in-out;
+  opacity: 1;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="slideshow">
+    <img class="active" src="https://static.wixstatic.com/media/a2e474_81b24a7a9d3e48de893072113cbc492a~mv2.jpg/v1/fill/w_1960,h_704,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a2e474_81b24a7a9d3e48de893072113cbc492a~mv2.jpg" alt="Image 1">
+    <img src="https://static.wixstatic.com/media/a2e474_178d55e325d54e2289f9763baf0b4406~mv2.jpg/v1/fill/w_1960,h_704,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a2e474_178d55e325d54e2289f9763baf0b4406~mv2.jpg" alt="Image 2">
+    <img src="https://static.wixstatic.com/media/a2e474_81b24a7a9d3e48de893072113cbc492a~mv2.jpg/v1/fill/w_1960,h_704,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a2e474_81b24a7a9d3e48de893072113cbc492a~mv2.jpg" alt="Image 3">
+    <img src="https://static.wixstatic.com/media/a2e474_4849adc23892444a84a6deabf29649fe~mv2.jpg/v1/fill/w_1694,h_608,al_c,q_85,enc_auto/a2e474_4849adc23892444a84a6deabf29649fe~mv2.jpg" alt="Image 4">
+    
+    <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+    <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+  </div>
+
+  <script src="./func.js"></script>
+
+</body>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slideshow img');
+    let timer;
+
+    function showSlide(n) {
+      slideIndex = (n + slides.length) % slides.length;
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+      }
+
+      slides[slideIndex].classList.add('active');
+    }
+
+    function changeSlide(n) {
+      clearInterval(timer); 
+      showSlide(slideIndex + n);
+      timer = setInterval(autoCycle, 3000);
+    }
+
+    function autoCycle() {
+      changeSlide(1);
+    }
+
+    timer = setInterval(autoCycle, 3000); 
+</script>
+
+</html>
