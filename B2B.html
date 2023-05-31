@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="./Pictures/Logos/Icon.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>ABQ B2B | Garden Brewery</title>
+</head>
+
+<body>
+    <!-- Logo Image at Top of Page -->
+    <div style="width: 100%; align-items: center;">
+        <img class="headImage" src="./Pictures/Logos/B2B ABQ Header.webp">
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li class="active"><a href="/">HOME</a></li>
+            <li><a href="/brews.html">BROWSE OUR BEERS</a></li>
+            <li><a href="/catering.html">CATERING</a></li>
+            <li><a href="/giving-back.html">GIVING BACK</a></li>
+            <li><a href="/featured.html">FEATURED</a></li>
+            <li><a href="/events.html">EVENTS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image Slideshow -->
+    <div class="slideshow">
+        <div class="slides-container">
+          <img class="active" src="./Pictures/mainPageLoop/brewing.webp" alt="Main">
+          <img src="./Pictures/mainPageLoop/pours.webp" alt="Pours">
+          <img src="./Pictures/mainPageLoop/tacos.webp" alt="Tacos">
+          <img src="./Pictures/mainPageLoop/sandwich.webp" alt="Sandwich">
+          <img src="./Pictures/mainPageLoop/people.webp" alt="People">
+        
+          <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+          <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+        </div>
+        <div class="text-container">
+          <div class="slide-text active">
+            We are a local microbrewery in Albuquerque that offers a wide variety of 
+            hand-crafted beers. 
+          </div>
+          <div class="slide-text">
+            Our beers are local [...]
+          </div>
+          <div class="slide-text">
+            Great tacos at prices you'll love. We have a variety of meats to choose
+            from as well as vegetarian options.
+          </div>
+          <div class="slide-text">
+            Don't want a taco? No worries, we have plenty of other food to choose
+            from, like sandwiches and elote.
+          </div>
+          <div class="slide-text">
+            Good company [...]
+          </div>
+        </div>
+    </div>
+
+    <!-- Selflane Button -->
+    <a href="https://selflane.com/bizs/b2b-garden-brewery_albuquerque_nm" target="_blank">
+        <button>Order Online</button>
+    </a>
+
+    <!-- Advertising Table -->
+    <table class="social">
+        <tr>
+            <td class="photo-column"><img src="./Pictures/happy_hour.jpeg" alt="happy hour"></td>
+            <td class="description-column">
+                <h3>Happy Hour</h3>
+                <p>We have a daily happy hour from 4:00pm to 6:00pm. Stop by for specials on our beer and ciders!</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="photo-column"><img src="./Pictures/food.png" alt="food"></td>
+            <td class="description-column">
+                <h3>Great Food</h3>
+                <p>Feeling hungry? Pick a dish from our southwest themed menu. From chicken to shrimp, we're bound
+                    to have the perfect taco for you. </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="photo-column"><img src="./Pictures/events.jpeg" alt="events"></td>
+            <td class="description-column">
+                <h3>Fun Events</h3>
+                <p>If you're looking for fun, you've come to the right place. Comedy nights, paint and sips,
+                    and live music - we got it all! Browse our event page to find out more.  </p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Social Media Tags -->
+    <div class="social-media">
+        <p>Follow us around the web</p>
+        <ul>
+            <li><a href="https://www.facebook.com/B2BGardenBrewery" target="_blank"><img src="./Pictures/Logos/Facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/b2bgardenbrewery/" target="_blank"><img src="./Pictures/Logos/Instagram.webp" alt="Instagram"></a></li>
+            <li><a href="https://www.tiktok.com/@b2babqgardenbrewery" target="_blank"><img src="./Pictures/Logos/TikTok.png" alt="TikTok"></a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h3>Contact Us</h3>
+        <p>If you have any questions, you can send us a message using the form
+            below and we will get back to you as soon as we can. </p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="First and Last Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email@domain.com">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Table for Location/Hours -->
+    <table class="location-table">
+        <tr>
+            <td class="location-column">
+                <h3>Location</h3>
+                <p>
+                    8338 Comanche Rd NE<br>
+                    Albuquerque, NM 87110
+                </p>
+                <p>
+                    (505) 407-2046
+                </p>
+            </td>
+            <td class="hours-column">
+                <h3>Hours</h3>
+                <p>
+                    Monday - Saturday: <br>
+                    12:00pm - 10:00pm
+                </p>
+                <p>
+                    Sunday:<br>
+                    Closed
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Calls Javascript Code for Slideshow -->
+    <script src="./JS/slideshow.js"></script>
+</body>
+</html>
