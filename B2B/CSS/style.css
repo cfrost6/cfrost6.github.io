@@ -1,0 +1,382 @@
+body {
+    background-color: black;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Styling for main image */
+    .headImage {
+        height: 100px;
+        display: block;
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 35px;
+    }
+
+/* Styling for the navigation menu */
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+      }
+    
+/* White bar above and below text */
+    nav::before,
+    nav::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        max-width: 900px;
+        height: 1px;
+        background-color: white;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    nav::before {
+        top: -2px;
+    }
+
+    nav::after {
+        bottom: -12px;
+    }
+
+/* Visually Indicate Current Page */
+    nav .active a {
+        color: black;
+    }
+    
+    nav .active {
+        background-color: #faca32;
+        padding: 5px 10px;
+        border-radius: 15px;
+        transition: background-color 0.3s ease-out;
+    }
+
+/* Change Color on Hover */
+    nav a {
+        transition: color 0.3s ease-out;
+    }
+      
+    nav a:hover {
+        color: #3698f9;
+        transition: color 0.3s ease-in;
+    }
+
+    nav .active:hover {
+        background-color: #3698f9;
+        transition: background-color 0.3s ease-in;
+    }
+
+    nav .active:hover a {
+        color: black;
+        transition: color 0.3s ease-in;
+    }
+
+/* Styles for Photo Slideshow */
+    .slideshow {
+        position: relative;
+        overflow: hidden;
+        max-width: 825px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .slideshow img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out;
+    }
+
+    .slideshow img.active {
+        opacity: 1;
+    }
+
+    .slides-container {
+        position: relative;
+        padding-bottom: 36.36%;
+    }
+
+    .slides-container .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2em;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .slides-container .arrow.left {
+        left: 10px;
+    }
+
+    .slides-container .arrow.right {
+        right: 10px;
+    }
+    
+    .arrow.left:hover, .arrow.right:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    .arrow.left:not(:hover), .arrow.right:not(:hover) {
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .text-container {
+        text-align: left;
+        width: 95%;
+        margin: 5px auto;
+        color: white;
+        font-weight: 100;
+        font-size: 15px;
+    }
+
+    .text-container .slide-text {
+        display: none;
+    }
+
+    .text-container .slide-text.active {
+        display: block;
+    }
+
+/* Styling for "Order Online" Button */
+    button {
+        height: 50px;
+        width: 125px;
+        margin: 35px auto;
+        background-color: #9acf34;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        display: block;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #6c961c;
+        transition: background-color 0.5s;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+/* Styling for Table */
+    h3 {
+        color: #ff6667;
+        font-size: 24px;
+        font-family: "Helvetica", Arial, sans-serif;
+        text-decoration: underline;
+    }
+
+    p {
+        color: white;
+        font-weight: 100;
+        font-style: italic;
+        padding-left: 15px;
+    }
+
+    table {
+        width: 95%;
+        max-width: 800px;
+        border-collapse: collapse;
+        margin: auto;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: none;
+    }
+
+    th {
+        background-color: black;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgb(25, 25, 25);
+    }
+
+    .photo-column {
+        width: 35%;
+        max-height: 150px;
+    }
+
+    .photo-column img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .description-column {
+        width: 65%;
+    }
+
+/* Social Media Section Stlying */
+    .social-media {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .social-media p {
+        color: rgb(133, 133, 133);
+        font-style: normal;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .social-media ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .social-media li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .social-media a img {
+        width: 30px;
+        height: 30px;
+    }
+
+/* Styling for Location/Hour Table */
+    .location-table {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .location-column,
+    .hours-column {
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .location-column h3,
+    .hours-column h3 {
+        color: #ff6500;
+        font-size: 20px;
+        font-family: "Helvetica", Arial, sans-serif;
+        text-decoration: none;
+    }
+
+    .location-column p,
+    .hours-column p {
+        color: white;
+        font-weight: 100;
+        font-style: normal;
+        padding-left: 15px;
+    }
+
+    .location-table::before {
+        content: "";
+        position: absolute;
+        width: 90%;
+        max-width: 900px;
+        height: 1px;
+        background-color: white;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+/* Styling for Contact Form */
+.contact-form {
+    text-align: center;
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-form h3 {
+    color: white;
+    font-size: 28px;
+    font-family: "Helvetica", Arial, sans-serif;
+    text-decoration: none;
+}
+
+.contact-form p {
+    color: white;
+    font-weight: 100;
+    font-style: normal;
+    margin-bottom: 25px;
+    margin-top: -10px;
+}
+
+.contact-form form {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #d4d4d4;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    height: 40px;
+    width: 100px;
+    background-color: #9acf34;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
